@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Temp Converter!</title>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
   <form>
-    Button:</br>
-    <input type="text" id="inputField" class="inputStyling" value="Enter temperature to convert!"></br>
-    <input type="button" id="converterId" value="Click me!"></input></br>
+  <fieldset>
+  <legend>Tim's Fancy-Pants Temperature-Converter!</legend>
+      <input type="text" id="inputField" class="inputStyling" value="">
+      <br>
+      Convert to Celsius
+      <input type="radio" id="fromC" name="Celsius" value="Celsius">
+      <br>
+      Convert to Fahrenheit
+      <input type="radio" id="fromF" name="Fahrenheit" value="Fahrenheit">
+      <br>
+  </fieldset>
+  <input type="submit" id="converterId" value="Click me!"><br>
+  <input type="submit" id="clear" value="Clear entry"><br>
   </form>
+  <div class="fancyBox">
+    <div id="output">
+    </div>
+  </div>
   <script type="text/javascript" src="converter.js"></script>
 </body>
 </html>

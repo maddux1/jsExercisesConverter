@@ -5,21 +5,16 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <form>
-  <fieldset>
-  <legend>Tim's Fancy-Pants Temperature-Converter!</legend>
       <input type="text" id="inputField" class="inputStyling" value="">
       <br>
       Convert to Celsius
-      <input type="radio" id="fromC" name="Celsius" value="Celsius">
+      <input type="radio" id="toC" name="Temperature" value="Celsius">
       <br>
       Convert to Fahrenheit
-      <input type="radio" id="fromF" name="Fahrenheit" value="Fahrenheit">
+      <input type="radio" id="toF" name="Temperature" value="Fahrenheit">
       <br>
-  </fieldset>
-  <input type="submit" id="converterId" value="Click me!"><br>
-  <input type="submit" id="clear" value="Clear entry"><br>
-  </form>
+  <button type="submit" id="converterId">Click me!</button><br>
+  <button type="submit" id="clear" value="clear_entry">Clear Text Field</button><br>
   <div class="fancyBox">
     <div id="output">
     </div>

@@ -15,14 +15,12 @@ var button = document.getElementById("converterId");
 button.addEventListener("click", determineConverter);
 
 var clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", clearFancyBox);
 
-// Take this to function 
-// var removedText = document.getElementById("inputField").value =
-//   document.getElementById("inputField").value ;
-clearButton.addEventListener("click", removedText);
-
-// This function should determine which conversion should
-// happen based on which radio button is selected.
+function clearFancyBox() {
+  var outPutClear = document.getElementById("output");
+  outPutClear.innerHTML = "";
+};
 
 function determineConverter() {
   if (document.getElementById("toC").checked) {
@@ -30,7 +28,7 @@ function determineConverter() {
   } else if (document.getElementById("toF").checked) {
   toFahrenheit();
   }
-}
+};
 
   // console.log("event", clickEvent);
 

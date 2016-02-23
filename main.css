@@ -17,3 +17,9 @@ p {
 #output {
 }
 
+.hotStuff {
+  margin: 0 auto 0 auto;
+  border: 5px dashed red;
+  height: 80px; 
+  width: 250px;
+}

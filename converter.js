@@ -2,13 +2,19 @@ function toCelsius() {
   var inputTemp = document.getElementById("inputField").value;
   var outputTemp = (((inputTemp - 32) * 5) / 9);
   document.getElementById("output").innerHTML = "<p>" + outputTemp + "</p>";
-}
+  if ( outputTemp > 32 ) {
+    document.getElementById("output").className = "hotStuff";
+  }
+};
 
 function toFahrenheit() {
   var inputTemp = document.getElementById("inputField").value;
   var outputTemp = (((inputTemp * 9) / 5) + 32);
   document.getElementById("output").innerHTML = "<p>" + outputTemp + "</p>";
-}
+    if ( outputTemp > 90 ) {
+    document.getElementById("output").className = "hotStuff";
+  }
+};
 
 // Get a reference to the button element in the DOM
 var button = document.getElementById("converterId");
@@ -29,10 +35,5 @@ function determineConverter() {
   toFahrenheit();
   }
 };
-
-  // console.log("event", clickEvent);
-
-// This is code for stlying converted temperature from green to blue or red.
-// 
 
 

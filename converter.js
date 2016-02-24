@@ -4,19 +4,22 @@ function toCelsius() {
   document.getElementById("output").innerHTML = "<p>" + outputTemp + "</p>";
   if ( outputTemp > 32 ) {
     document.getElementById("output").className = "hotStuff";
+  } else if ( outputTemp < 0 ) {
+    document.getElementById("output").className = "coolStuff";
   }
 };
-
+  
 function toFahrenheit() {
   var inputTemp = document.getElementById("inputField").value;
   var outputTemp = (((inputTemp * 9) / 5) + 32);
   document.getElementById("output").innerHTML = "<p>" + outputTemp + "</p>";
     if ( outputTemp > 90 ) {
     document.getElementById("output").className = "hotStuff";
+  } else if ( outputTemp < 32 ) {
+    document.getElementById("output").className = "coolStuff";
   }
 };
 
-// Get a reference to the button element in the DOM
 var button = document.getElementById("converterId");
 button.addEventListener("click", determineConverter);
 

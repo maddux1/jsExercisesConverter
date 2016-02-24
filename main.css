@@ -3,23 +3,20 @@
 }
 
 div.fancyBox {
+  border: 2px dashed black;
   margin: 0 auto 0 auto;
-  border: 5px dashed black;
   height: 80px; 
   width: 250px;
 }
 
 p {
-    margin: 13% 25%;
+  margin: 13% 25% 15% 25%;
 }
 
-
-#output {
+.hotStuff p {
+  color: red;
 }
 
-.hotStuff {
-  margin: 0 auto 0 auto;
-  border: 5px dashed red;
-  height: 80px; 
-  width: 250px;
+.coolStuff p {
+  color: blue;
 }
